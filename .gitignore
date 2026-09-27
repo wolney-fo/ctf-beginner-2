@@ -1,0 +1,20 @@
+# ==== SPOILERS / SEGREDOS - NUNCA COMMITAR ====
+VULNERABILITIES.md
+flags.md
+app/notes.txt
+*.env
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Uploads de runtime (mantem apenas as imagens de exemplo do mural)
+app/uploads/*
+!app/uploads/sunset.svg
+!app/uploads/desk.svg
+!app/uploads/trail.svg
+!app/uploads/draft.svg
+
+# Sistema
+.DS_Store
+*.log

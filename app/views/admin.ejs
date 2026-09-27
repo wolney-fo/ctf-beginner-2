@@ -1,0 +1,16 @@
+<%- include("partials/head") %>
+<div class="card pad">
+  <h1>Administrative panel</h1>
+  <p class="muted">All board posts, including private drafts.</p>
+  <table>
+    <tr><th>ID</th><th>Title</th><th>Visibility</th></tr>
+    <% posts.forEach(function(p){ %>
+      <tr><td><%= p.id %></td><td><%= p.title %></td><td><%= p.private ? "private" : "public" %></td></tr>
+    <% }); %>
+  </table>
+</div>
+<div class="card pad">
+  <h2>Administrator key</h2>
+  <div class="flag"><%= flag %></div>
+</div>
+<%- include("partials/foot") %>

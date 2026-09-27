@@ -1,0 +1,9 @@
+<%- include("partials/head") %>
+<div class="card pad">
+  <a class="muted" href="/">&larr; back to the board</a>
+  <h1><%= post.title %></h1>
+  <img class="full" src="/view?img=<%= encodeURIComponent(post.filename) %>" alt="<%= post.title %>">
+  <p><%= post.caption %></p>
+  <p class="muted">Post #<%= post.id %><% if (post.private) { %> &middot; <strong>private draft</strong><% } %></p>
+</div>
+<%- include("partials/foot") %>

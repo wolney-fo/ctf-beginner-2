@@ -1,0 +1,28 @@
+<%- include("partials/head") %>
+<div class="card pad">
+  <h1>Post a photo</h1>
+  <p class="muted">Images only (JPG, PNG, GIF...). Recommended max size: 5 MB.</p>
+  <form method="post" action="/upload" enctype="multipart/form-data" id="uploadForm">
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Give your photo a name">
+    <label>Caption</label>
+    <input type="text" name="caption" placeholder="Write something about the photo">
+    <label>File</label>
+    <input type="file" name="photo" id="photo" accept="image/*" required>
+    <button type="submit">Upload</button>
+  </form>
+
+  <% if (result) { %>
+    <div class="result <%= result.ok ? 'ok' : 'err' %>">
+      <p><%= result.msg %></p>
+      <% if (result.filename) { %>
+        <p class="muted">Saved as: <code><%= result.filename %></code>
+        &middot; <a href="/view?img=<%= encodeURIComponent(result.filename) %>">view file</a></p>
+      <% } %>
+      <% if (result.bypass) { %>
+        <div class="flag"><%= result.flag %></div>
+      <% } %>
+    </div>
+  <% } %>
+</div>
+<%- include("partials/foot") %>

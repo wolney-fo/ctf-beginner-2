@@ -1,0 +1,20 @@
+<%- include("partials/head") %>
+<div class="hero">
+  <h1>Community board</h1>
+  <p>Share your best photos with everyone. Be kind and have fun!</p>
+  <a class="btn" href="/upload">Post a photo</a>
+</div>
+<div class="grid">
+  <% posts.forEach(function(p){ %>
+    <a class="cardlink" href="/post/<%= p.id %>">
+      <div class="card">
+        <img src="/view?img=<%= encodeURIComponent(p.filename) %>" alt="<%= p.title %>">
+        <div class="cardbody">
+          <h3><%= p.title %></h3>
+          <p class="muted"><%= p.caption %></p>
+        </div>
+      </div>
+    </a>
+  <% }); %>
+</div>
+<%- include("partials/foot") %>

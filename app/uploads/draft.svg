@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#20141b"/>
+  <rect x="40" y="40" width="320" height="220" rx="8" fill="none" stroke="#e0568c" stroke-dasharray="8 6"/>
+  <text x="200" y="160" fill="#e0568c" font-family="sans-serif" font-size="18" text-anchor="middle">DRAFT</text>
+</svg>

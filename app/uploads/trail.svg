@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0d1b1a"/>
+  <polygon points="0,300 130,120 240,300" fill="#2f6d4f"/>
+  <polygon points="160,300 280,90 400,300" fill="#3a8a63"/>
+  <circle cx="320" cy="70" r="30" fill="#ffd98a"/>
+  <text x="200" y="285" fill="#cfe9d8" font-family="sans-serif" font-size="14" text-anchor="middle">trail</text>
+</svg>

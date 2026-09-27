@@ -1,0 +1,14 @@
+<%- include("partials/head") %>
+<div class="card pad">
+  <h1>Build panel (internal)</h1>
+  <p class="muted">Diagnostics endpoint used by the team during development. Should not be reachable in production.</p>
+  <table>
+    <tr><th>Node</th><td><%= node %></td></tr>
+    <tr><th>Posts loaded</th><td><%= posts %></td></tr>
+    <tr><th>Environment</th><td>staging</td></tr>
+    <tr><th>Release notes</th><td>see <code>notes.txt</code> in the project root</td></tr>
+  </table>
+  <h2>Build token</h2>
+  <div class="flag"><%= flag %></div>
+</div>
+<%- include("partials/foot") %>

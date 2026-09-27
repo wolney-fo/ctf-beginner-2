@@ -1,0 +1,16 @@
+{
+  "name": "snapnest",
+  "version": "1.4.0",
+  "description": "SnapNest - community photo board (intentionally vulnerable training app)",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "multer": "^2.0.1"
+  }
+}
